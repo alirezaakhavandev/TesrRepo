@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--This is a simple xml document , only used for practiec-->
-<note date= "12/11/2024">
-  <to>The Rader</to>
-  <from>Developer</from>
-  <heading>XML Practice</heading>
-  <body>Read XML to become better</body>
-  <!--adding new subchild-->
-  <sn>the massage was &qout; not &qout; sent</sn>
-</note>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>MavenTestTool</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.target>23</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <name>Astra</name>
+    <description>This is the first hands-on shot</description>
+    <organization>
+        <name>Maven King</name>
+        <url>https://www.mavenkings.com</url>
+    </organization>
+    <developers>
+        <developer>
+            <name>Alireza</name>
+            <email>Alireza.akhavan.work@gmail.com</email>
+        </developer>
+    </developers>
+
+</project>
