@@ -5,4 +5,6 @@
   <from>Developer</from>
   <heading>XML Practice</heading>
   <body>Read XML to become better</body>
+  <!--adding new subchild-->
+  <sn>the massage was &qout; not &qout; sent</sn>
 </note>
