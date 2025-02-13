@@ -4,9 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>QA</artifactId>
+    <groupId>com.company</groupId>
+    <artifactId>mav</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>23</maven.compiler.source>
@@ -14,18 +15,62 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <name>Learning Maven build-tool</name>
+    <description>This pom file is just a practice for maven</description>
+    <url>https://website.com</url>
+    <licenses>
+        <license>
+            <name>Premium</name>
+            <comments>You are ultimate user if you buy it.</comments>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Organization</name>
+        <url>https://Organization.com</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <name>Alireza Akhavan</name>
+            <email>Alireza@gamil.com</email>
+            <organization>Apache</organization>
+            <url>https://AlirezaPersonalBlog.com</url>
+            <roles>
+                <role>Back-end developer</role>
+            </roles>
+        </developer>
+
+        <developer>
+            <name>Imaginary developer</name>
+            <email>AnImaginaryEmail.com</email>
+            <roles>
+                <role>She cleans Alireza's desk</role>
+            </roles>
+        </developer>
+    </developers>
+
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.9.0</version>
-            <scope>test</scope>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.28.1</version>
         </dependency>
 
-
-        
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+            <dependency>
+                <groupId>io.github.bonigarcia</groupId>
+                <artifactId>webdrivermanager</artifactId>
+                <version>5.9.2</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
 </project>
